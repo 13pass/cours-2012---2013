@@ -7,6 +7,8 @@ http://www.youtube.com/watch?v=IEmgXsoV35w
 Atelier pratique
 http://www.youtube.com/watch?v=qPo7YPB6EFM
 
+Tutoriel intératif:
+http://try.github.com
 
 Git: un outil de gestion de contenu de type DVCS.
 
