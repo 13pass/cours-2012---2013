@@ -19,6 +19,8 @@ Il peut être comparé au processus ayant lieu dans un comité de lecture, l'obj
 
 Une revue de code peut s'appuyer sur la vérification (manuelle ou automatisée) du respect d'un ensemble de règles de programmation.  
 
+(On peut citer par exemple l'outil checkstyle sous un projet Eclipse). 
+
 La revue de code devient de plus en plus une étape à part entière dans tout processus de développement logiciel.  
 
 ##le pair programming
@@ -28,7 +30,7 @@ http://fr.wikipedia.org/wiki/Programmation_en_bin%C3%B4me
 
 Utile pour  
 
-* Avoir une certaines qualité du code, vise à remplacer la revue de code par une réflexion en amont.  
+* Avoir une certaine qualité du code, vise à remplacer la revue de code par une réflexion en amont.  
 
 * Obtenir un code plus facile à maintenir et donc gagner du temps en terme de maintenance de code.  
 
@@ -40,7 +42,7 @@ Utile pour
 
 ###Intérêt de tester du code.
 
-* Garder un certain control du comportement de l'application.
+* Garder un certain contrôle du comportement de l'application.
 * Important en fonction de la criticité de l'application (données sensibles, sécurité, maintenabilité)
 
 * test ergonomique (A/B testing) afin d'optimiser l'ergonomie d'une interface.
