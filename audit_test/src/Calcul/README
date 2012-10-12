@@ -1,0 +1,3 @@
+Pour executer la suite de test :
+
+$perl bootstrap.pl test t/test1.t
