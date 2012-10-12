@@ -134,3 +134,11 @@ git pull
 Les modifications distantes vont être récupérées et "mergées" dans la branche courante. 
 S’il n’y aucun problème, un commit sera créé avec les modifications distantes inclues. 
 Il suffit ensuite de pusher, pour envoyer tout ça sur le "remote".
+
+
+Pour ceux qui veulent utiliser Git avec Windows et TortoiseGit, vous pouvez suivre le tuto suivant :
+
+http://uncod.in/blog/github-tortoisegit-and-organizational-workflow-tutorial/
+
+Pour générer votre clé SSH, vous pouvez utiliser PuttyGen.
+Si le premier clone ne fonctionne pas, essayez de vous connecter une fois à votre dépot GitHub à partir de Putty et acceptez de stocker la clé dans le cache.
