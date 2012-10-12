@@ -58,8 +58,20 @@ Effet collatéral
 => Simplifie la synchronisation des codes de développement et de production. 
 
 
-# TDD
+# TDD (Test Driven Developement)
 
 ## Exemple
 
 https://github.com/Ajaxman/TDD
+
+Etapes :
+
+1. Ecrire le test
+2. Vérifier que le test échoue
+3. Ecrire le code suffisant pour que le test réussisse
+4. Vérifier que le test réussise.
+5. Implémenter la fonctionnalité.
+6. Vérifier que le test réussise (idem 4).
+
+
+
