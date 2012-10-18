@@ -4,12 +4,12 @@ Différents buts:
 
 * renforcer la fiabilité , la sécurité, la performance du code.
 * déterminer la complexité du code d'un applicatif et en déduire sa maintenabilité.
-* palier à l'absence de tests d'une application.
+* pallier l'absence de tests d'une application.
 
 
 #Techniques plus en amont:
 
-##la revue de code
+##La revue de code
 
 http://fr.wikipedia.org/wiki/Revue_de_code
   
@@ -23,7 +23,7 @@ Une revue de code peut s'appuyer sur la vérification (manuelle ou automatisée)
 
 La revue de code devient de plus en plus une étape à part entière dans tout processus de développement logiciel.  
 
-##le pair programming
+##Le pair programming
 
 Ou programmation en binôme
 http://fr.wikipedia.org/wiki/Programmation_en_bin%C3%B4me
