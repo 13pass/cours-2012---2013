@@ -138,10 +138,14 @@ Cette boucle tourne tout au long d'un programme.
 
 Pour résumer son action on pourrait l'écrire en pseudocode de la manière suivante:
 
-while there are still events to process:
-    e = get the next event
-    if there is a callback associated with e:
-        call the callback
+```
+while there are still events to process:  
+
+    e = get the next event  
+    
+    if there is a callback associated with e:  
+    
+        call the callback```
 
 http://nikhilm.github.com/uvbook/basics.html
 
