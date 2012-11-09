@@ -25,6 +25,7 @@
 
 * [Bonnes pratiques sur les dépendances](http://blog.nodejitsu.com/package-dependencies-done-right)
 * [Useful Node.js Tools, Tutorials And Resources](http://coding.smashingmagazine.com/2011/09/16/useful-node-js-tools-tutorials-and-resources/)
+* [faciliter le debug de nodejs avec inspect](http://docs.nodejitsu.com/articles/getting-started/how-to-use-util-inspect)
 * ["Callbacks are the modern goto"](http://elm-lang.org/learn/Escape-from-Callback-Hell.elm)
 
 ##Javascript:
