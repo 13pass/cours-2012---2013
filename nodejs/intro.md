@@ -128,6 +128,23 @@ Lors d'une opération d'entrée/sortie le flot d'exécution est immédiatement l
 Ces 3 derniers modes d'opérations sont dit basé sur des événements (event-based)
 
 
+##event-loop  
+
+node.js utilisé une boucle d'évenement (event-loop).
+
+Elle est basé sur libuv depuis la version 0.6
+
+Cette boucle tourne tout au long d'un programme.
+
+Pour résumer son action on pourrait l'écrire en pseudocode de la manière suivante:
+
+while there are still events to process:
+    e = get the next event
+    if there is a callback associated with e:
+        call the callback
+
+http://nikhilm.github.com/uvbook/basics.html
+
 
 
 
