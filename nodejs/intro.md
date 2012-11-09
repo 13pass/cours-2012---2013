@@ -76,6 +76,16 @@ voir http://www.w3schools.com/jsref/jsref_obj_date.asp
 
 
 
+##Latence
+
+(cf http://fr.wikipedia.org/wiki/Latence)
+
+Examples de latence: 
+
+* le délai entre une requête à un médium de stockage de données et le début du transfert de l'information demandée. Les latences les plus importantes sont causées par des déplacements mécaniques, par exemple sur un disque dur par le positionnement de la tête de lecture et la rotation du disque ;
+* le délai entre une requête d'un client et la réponse du serveur ;
+
+Globalement on peut avoir une latence importante dès lors qu'on effectue des entrées/sorties: http://fr.wikipedia.org/wiki/Entr%C3%A9es-sorties Car les temps d'accès aux disques et au réseaux sont importants.
 
 
 
