@@ -88,7 +88,44 @@ Examples de latence:
 Globalement on peut avoir une latence importante dès lors qu'on effectue des entrées/sorties: http://fr.wikipedia.org/wiki/Entr%C3%A9es-sorties Car les temps d'accès aux disques et au réseaux sont importants.
 
 
+## bloquant/non-bloquant
 
+mode définissant comment le système accède à un péripherique.
+
+* en mode bloquant une opération d'entrée/sortie ne retournera à l'application qu'une fois l'opération terminée.
+* en mode non-bloquant une opération d'entrée/sortie retournera immédiatement à l'application mais sans le resultat de cette opération mais avec éventuellement un code de statut de l'opération ou une erreur. Plusieurs appels peuvent ensuite être requis pour surveiller l'état de cette opération.
+
+
+## synchrone/asynchrone
+
+type d'appel définissant le comportement du flot d'exécution d'un programme lors d'une opération d'entrée/sortie.
+
+* Une opération d'entrée/sortie est dite synchrone si elle bloque le flot d'exécution jusqu'à ce que l'opération soit terminée.
+
+* Une opération d'entrée/sortie est dite asynchrone si elle libère immédiatement le flot d'exécution, généralement avant que l'opération ne soit terminée.
+
+
+## opération d'entrée/sortie synchrone et bloquante
+
+Mode d'opération le plus commun, au niveau d'une application, une opération d'entrée/sortie ne nécessite qu'un seul appel et bloque l'application jusqu'à ce que l'opération soit terminée. Pendant ce temps de blocage l'application n'utilise pas d'unité processeur, le système d'exploitation peut donc passer la main à une autre application.
+
+
+## opération d'entrée/sortie synchrone et non-bloquante
+
+Plusieurs appels souvent nécessaire avant que l'opération ne soit terminée (polling)
+
+## opération d'entrée/sortie asynchrone et bloquante
+
+Permet de passer plusieurs descripteurs de fichier d'entrée/sortie lors d'un appel d'opération.
+
+Des fonctions systèmes peuvent ensuite utiliser ces descripteurs pour suivre l'état d'une opération d'entrée/sortie  (exemple: select, poll, epoll and kqueue) dans ce cas ce sont ces appels de fonctions qui sont bloquants.
+
+## opération d'entrée/sortie asynchrone et non-bloquante
+
+Lors d'une opération d'entrée/sortie le flot d'exécution est immédiatement libéré. Une fois l'opération terminée un événement est émis ou une fonction de callback est executée. L'avantage de ce mode d'opération est d'éviter le blocage de l'application lors d'une opération d'entrée/sortie, l'application peut alors conserver la main sur l'unité de processeur alors que l'opération est toujours en cours. 
+
+
+Ces 3 derniers modes d'opérations sont dit basé sur des événements (event-based)
 
 
 
