@@ -196,9 +196,9 @@ Avec un bouton pour chaque action. Les actions seront grisés tant qu'il manquer
 * Remplir une casserolle d'eau -> 0,1 s
 * Ajouter du sel -> 0.1 s
 * Faire bouillir l'eau de la casserolle -> entre 9 et 10 s
-* Peler et couper des tomates fraiche -> 1 s
+* Peler et couper des tomates fraiches -> 1 s
 * Préparer le soffritto -> 1.5 s
-* Chauffer le soffrito -> 5 s
+* Chauffer le soffritto -> 5 s
 * Ajouter les pates -> 0.1s
 * Ajouter les tomates, herbes, sels et poivres -> 0.2 s
 * Cuisson des pates -> entre 5 et 7 s pour "aldente" entre 6 et 8 s pour "bien cuite"
