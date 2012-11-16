@@ -154,7 +154,7 @@ http://nikhilm.github.com/uvbook/basics.html
 
 ### Exercice D : 
 
-suite de l'exercice B
+suite de l'exercice B (en Perl et synchrone)
 
 1) Ajouter 2 autres requetes pour chercher les termes 'Perl' et 'Mojolicious'.  
 
@@ -164,7 +164,7 @@ suite de l'exercice B
 
 ### Exercice E :
 
-suite de l'exercice C
+suite de l'exercice C (en node.js)
 
 1) idem 1) de l'exercice D.  
 
