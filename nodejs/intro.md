@@ -150,6 +150,28 @@ while there are still events to process:
 http://nikhilm.github.com/uvbook/basics.html
 
 
+##Exercices :
+
+### Exercice D : 
+
+suite de l'exercice B
+
+1) Ajouter 2 autres requetes pour chercher les termes 'Perl' et 'Mojolicious'.  
+
+2) Mesurer le temps passé pour l'execution de ces 3 requetes (en ms).  
+
+
+
+### Exercice E :
+
+suite de l'exercice C
+
+1) idem 1) de l'exercice D.  
+
+2) idem 2) de l'exercice D.  
+
+
+
 
 
 
