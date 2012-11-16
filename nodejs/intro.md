@@ -193,6 +193,8 @@ mettre en place une application web permettant de simuler la cuisson des pates.
 
 Avec un bouton pour chaque action. Les actions seront grisés tant qu'il manquera des éléments pour les lancer (ex: on n'ajoute pas les pates tant que l'eau ne bout pas.)
 
+Il n'y a qu'une saliere de disponible pour l'ensemble des cuisiniers.
+
 * Remplir une casserolle d'eau -> 0,1 s
 * Ajouter du sel -> 0.1 s
 * Faire bouillir l'eau de la casserolle -> entre 9 et 10 s
