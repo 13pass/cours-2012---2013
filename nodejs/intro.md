@@ -183,4 +183,12 @@ L'une comme l'autre peuvent être implicites ou explicites.
 
 
 
+##Exercice F:
+
+En vous inspirant du poste suivant:
+
+http://dotheweb.posterous.com/nodejs-for-php-programmers-1-event-driven-pro
+
+mettre en place une application web permettant de simuler la cuisson des pates
+
 
