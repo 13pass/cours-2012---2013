@@ -145,7 +145,8 @@ while there are still events to process:
     
     if there is a callback associated with e:  
     
-        call the callback```
+        call the callback
+```
 
 http://nikhilm.github.com/uvbook/basics.html
 
