@@ -182,6 +182,10 @@ La coordination entre activité consiste à ce qu'une activité attende bien la 
 L'une comme l'autre peuvent être implicites ou explicites.
 
 
+* module avec ensemble de fonctions utiles pour la gestion asynchrone des événements en javascript: 
+
+https://github.com/caolan/async
+
 
 ##Exercice F:
 
@@ -209,5 +213,6 @@ Il n'y a qu'une saliere de disponible pour l'ensemble des cuisiniers.
 * Servir avec du fromage -> 0.2 s 
 
 Calculer le temps total pour la cuisson des pates
+
 
 
