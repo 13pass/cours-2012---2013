@@ -172,6 +172,14 @@ suite de l'exercice C (en node.js)
 2) idem 2) de l'exercice D.  
 
 
+##Synchronisation et coordination:  
+
+
+La synchronisation controle l'accès aux ressources partagèes entre plusieurs activités. Pour eviter par exemple l'accès simultanée à une même ressource par 2 activités.
+
+La coordination entre activité consiste à ce qu'une activité attende bien la fin d'une autre activité dont elle dépend. Par exemple une activité A attend la fin de l'execution d'une activité B dont elle nécessite un retour avant de poursuivre son execution.
+
+L'une comme l'autre peuvent être implicites ou explicites.
 
 
 
