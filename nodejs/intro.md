@@ -214,5 +214,36 @@ Il n'y a qu'une saliere de disponible pour l'ensemble des cuisiniers.
 
 Calculer le temps total pour la cuisson des pates
 
+##Exercice E:  
 
+Creer un bouton facebook connect. (voir graph.facebook.com)
+
+Lors de la connection demander le droit de voir les évènements des amis l'utilisateur.
+
+Une fois le token recupérer faire une requete avec graph api pour récuperer la liste des amis de l'utilisateur.
+
+Pour chaque ami, récupérer la liste des événements de cet ami.
+
+Pour chaque événement tester si l'event est public.
+
+Si non ajouter un statut "private" à l'évenement et stocker le dans une collection d'évènements.
+
+Si public alors voir si on a les données de latitude et longitude de l'adresse de l'évent.
+
+Si ce n'est pas le cas alors tenter de géocoder l'adresse avec l'api
+
+http://where.yahooapis.com/geocode?flags=GJ&appid=MON_APP_ID&q=10%20quai%20des%20chartrons,Bordeaux
+
+Si qualité >50 alors recuperer les champs latitude et longitude et sauver l'event avec le statut à "yahoo_ok"
+
+
+Si qualité <=50 alors geocoder avec l'api google map
+
+Si geocode ok avec google, sauver l'event avec le statut à "google_ok"
+
+Faites en sorte que même si on n'arrive pas à géocoder des évènements on les sauvegarde en base avec le statut "failure".
+
+La sauvegarde serait faite sur une collection mongodb 'event'
+
+Pour cela vous pouvez utiliser le module async.
 
