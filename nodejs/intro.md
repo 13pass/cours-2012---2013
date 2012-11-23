@@ -216,7 +216,7 @@ Calculer le temps total pour la cuisson des pates
 
 ##Exercice E:  
 
-Creer un bouton facebook connect. (voir graph.facebook.com et https://developers.facebook.com/tools/explorer/)
+Creer un bouton facebook connect. (voir graph.facebook.com et https://developers.facebook.com/tools/explorer/ et http://developers.facebook.com/docs/concepts/login/permissions-login-dialog/)
 
 Lors de la connection demander le droit de voir les évènements des amis l'utilisateur.
 
