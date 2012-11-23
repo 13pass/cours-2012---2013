@@ -247,3 +247,44 @@ La sauvegarde serait faite sur une collection mongodb 'event'
 
 Pour cela vous pouvez utiliser le module async.
 
+```javascript
+exports.graphGET = function(fbid,access_token, callback) {
+  var testQuestionMark=fbid.split("?");
+   
+  if (testQuestionMark[1])
+  {
+    var path = fbid+'&access_token='+escape(access_token);
+  }else
+  {
+    var path = fbid+'?access_token='+escape(access_token);
+
+  }
+
+  var options = {
+  'host': 'graph.facebook.com',
+  'port': 443,
+  'path': path,
+  'method': 'GET'
+  };
+
+  var req = https.request(options, function(res) {
+    //console.log("statusCode: ", res.statusCode);
+    //console.log("headers: ", res.headers);
+    res.setEncoding('utf8');
+    var text = "";
+    res.on('data', function(chunk) {
+      text += chunk;
+    });
+    res.on('end', function (chunk) {
+      callback(res.statusCode, text, res.headers);
+    });
+  });
+  req.end();
+
+  req.on('error', function(e) {
+    //console.error(e);
+    callback(-1, e, null);
+  });
+};
+
+```
