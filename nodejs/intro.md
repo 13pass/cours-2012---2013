@@ -218,6 +218,28 @@ Calculer le temps total pour la cuisson des pates
 
 Creer un bouton facebook connect. (voir graph.facebook.com et https://developers.facebook.com/tools/explorer/ et http://developers.facebook.com/docs/concepts/login/permissions-login-dialog/)
 
+Ci dessous un exemple d'appel du login dialog (ancienne version)
+```javascript
+function declareFbButtons() {
+    var loginFunction = function () {
+        FB.login(function (response) {
+            treatFbLoginResponse(response);
+        }, {
+            scope: 'friends_events,friends_status,user_status,offline_access,email'
+        })
+        return false;
+    };
+    var logoutFunction = function () {
+    FB.logout(function (response) {
+            treatFbLoginResponse(response);
+        })
+        return false;
+    };
+    $('#fb-connect').click(ApplyFunction);
+}
+
+```
+
 Lors de la connection demander le droit de voir les évènements des amis l'utilisateur.
 
 Une fois le token recupérer faire une requete avec graph api pour récuperer la liste des amis de l'utilisateur.
