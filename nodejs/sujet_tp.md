@@ -6,7 +6,7 @@ Chaque binôme utilisera des pull-request ou des collaborateurs pour intégrer l
 
 chaque étudiant pensera à commiter régulièrement son travail d'implémentation. 
 
-L'application est à faire avec node.js en utilisant un framework MVC (express, geddy ou meteor) et éventuellement avec une base de donnée (mongo.db conseillée).
+L'application est à faire avec node.js, pour cela il est conseillé d'utiliser un framework permettant de gérer le routage des discussions ainsi que des templates pour ces pages de discussions comme flatiron ou encore express, geddy et éventuellement avec une base de donnée (mongodb conseillée).
 
 Le but de ce TP est de créer une application de chat web.
 
@@ -29,3 +29,5 @@ Vu le succès de l'appli et comme suggéré par les utilisateurs du chat nous al
 
 On se rend compte que certaines discussions sont très courtes ce qui donne des pages de discussions avec peu de contenu, ce qui est plutôt négatif en terme de référencement. 
 Un de vos amis qui fait du SEO (Search Engine Optimization) vous suggère lors des discussions d'inclure des tweets de la même langue (français) relatif au sujet du salon en recherchant les tweets comportant un tag ayant le même intitulé. L'idée serait de les placer dans la discussion en utilisant le pseudo du compte twitter et le text associé au tweet.
+
+Pour promouvoir ces pages on ajoutera, au niveau de la page d'accueil du site, les liens des 10 dernieres discussions ajoutées.
