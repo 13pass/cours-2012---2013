@@ -1,4 +1,4 @@
-##TP à faire en binôme, à rendre pour le 7 décembre 2012.
+##TP à faire en binôme, à rendre pour le 14 décembre 2012.
 
 Pas de compte-rendu nécessaire mais une adresse de dépot github référent et le lien des commits faisant état d'une livraison de version (0.X, 1.X et 2.X) à envoyer par email avec la composition du binôme à vincent.hetru@13pass.com
 
