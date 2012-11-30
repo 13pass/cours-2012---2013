@@ -243,7 +243,8 @@ Si geocode ok avec google, sauver l'event avec le statut à "google_ok"
 
 Faites en sorte que même si on n'arrive pas à géocoder des évènements on les sauvegarde en base avec le statut "failure".
 
-La sauvegarde serait faite sur une collection mongodb 'event'
+La sauvegarde serait faite sur une collection mongodb 'event' 
+https://github.com/mongodb/node-mongodb-native
 
 Pour cela vous pouvez utiliser le module async.
 
