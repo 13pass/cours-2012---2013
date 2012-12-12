@@ -11,6 +11,8 @@
 * [How to Node](http://howtonode.org/)
 * [Blog rolling with mongoDB, express and Node.js](http://howtonode.org/express-mongodb)
 * [NodeBits](http://www.nodebits.org/)
+* [Async](https://github.com/caolan/async)
+* [Node.js Async Programming](http://www.hacksparrow.com/node-js-async-programming.html)
 
 ###Screencasts :
 
@@ -34,6 +36,7 @@
 * [Crockford on Javascript](http://yuiblog.com/crockford/)
 * [Eloquent Javascript](http://eloquentjavascript.net/)
 * [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/JavaScript)
+
 
 ###JSON:
 
