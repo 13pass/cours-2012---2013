@@ -36,5 +36,12 @@ Le scharding et la replication de base de données peuvent être utilisés conjo
 
 ![cluster de shard repliqués](https://github.com/edelight/chef-mongodb/wiki/Replicated_and_Sharded.png)
 
+Ces 2 techniques conduisent à un partitionnement de la base de données et amènent leur lot de problématiques nouvelles.
+
+##Theoreme de CAP
+
+http://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_CAP
+
+![Théororeme de Brewer](https://raw.github.com/13pass/cours-2012---2013/master/mongodb/theoreme_de_brewer.png)
 
 
