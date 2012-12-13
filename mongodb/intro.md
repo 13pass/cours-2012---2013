@@ -42,6 +42,6 @@ Ces 2 techniques conduisent à un partitionnement de la base de données et amè
 
 http://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_CAP
 
-![Théororeme de Brewer](./theoreme_de_brewer.png)
+![Théororeme de Brewer](theoreme_de_brewer.png)
 
 
