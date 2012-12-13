@@ -49,3 +49,36 @@ Les systèmes de gestion de bases de données NoSQL sont conçu pour favoriser l
 Dans le cas de NoSQL on peut en déduire un choix de contraintes résultantes du théorème de CAP.
 
 ![Résultante de Brewer NoSQL](https://raw.github.com/13pass/cours-2012---2013/master/mongodb/resultante_nosql_de_brewer.png)
+
+
+
+#Comparaison relationelle et documentaire
+Table <=> Collection
+Enregistrement <=> Document
+Relation <=> Lien vers document
+
+http://docs.mongodb.org/manual/reference/sql-comparison/
+
+#Conception de base mongodb
+
+En théorie pas de schema de base de données en Nosql, en pratique la plupart des documents que l'on stocke dans une collection de documents suivent un schema implicite (champs revenant régulièrement) ou explicite (champs indéxés). 
+La partie implicite du schema est souvent une conséquence des choix de structure de données fait au niveau applicatif. En créant des indexes sur des champs spécifiques on désigne de façon explicite que ces champs font partie du schéma de la base de données et peuvent imposer des contraintes comme par exemple l'unicité de valeur d'un champ ou d'une combinaison de champs.
+
+Il faut ensuite définir les différentes collections de documents. Cela implique des choix à faire sur l'opportunité d'embarquée certaines informations dans un document ou d'embarqué un lien vers un autre document contenant ces informations.
+
+Par exemple: une collection "event" peut embarquer un tableau avec la liste des participants à l'événement, l'information sur les participants peut être embarquée dans un document de la collection "event" ou bien stockée sous forme de document dans une autre collection "participant", dans ce cas il suffit de garder un identifiant de chaque participant lié à un document de la collection "participant". 
+
+
+Les choix de conception sont liés à des problématiques concernant:  
+
+* les requêtes les plus courantes.  
+
+* le choix des clès de sharding.  
+
+* l'atomicité des operations.  
+
+http://www.journaldunet.com/developpeur/tutoriel/theo/060615-theo-db-acid.shtml
+http://docs.mongodb.org/manual/tutorial/isolate-sequence-of-operations/
+
+Typiquement on peut faire des opérations atomiques avec mongoDB si ces opérations concernent un seul et même document. En d'autres termes pour faire des opérations atomiques sur des données il faut que ces données se trouvent dans le même document.
+
