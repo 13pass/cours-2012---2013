@@ -46,6 +46,6 @@ http://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_CAP
 
 Les systèmes de gestion de bases de données NoSQL sont conçu pour favoriser la scalabilité des base de données en facilitant la mise en place de sharding et de replication de données. Elles prévoient donc dès le départ un partitionement futur des base données.
 
-Dans le cas de NoSQL on peut en déduire des contraintes résultantes du théorème de CAP.
+Dans le cas de NoSQL on peut en déduire un choix de contraintes résultantes du théorème de CAP.
 
 ![Résultante de Brewer NoSQL](https://raw.github.com/13pass/cours-2012---2013/master/mongodb/resultante_nosql_de_brewer.png)
