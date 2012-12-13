@@ -32,7 +32,7 @@ Pour éviter des arrêts intempestifs de la base de données, qui seraient répe
 
 Le sharding correspond à une autre technique de scalabilité horizontale qui permet de répartir les données entre différents serveurs.
 
-Le scharding et la replication de base de données peuvent être utilisés conjointement en utilisant par exemple un cluster de shard repliqués.
+Le sharding et la replication de base de données peuvent être utilisés conjointement en utilisant par exemple un cluster de shard repliqués.
 
 ![cluster de shard repliqués](https://github.com/edelight/chef-mongodb/wiki/Replicated_and_Sharded.png)
 
