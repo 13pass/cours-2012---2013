@@ -101,7 +101,9 @@ http://docs.mongodb.org/manual/core/document/#dot-notation
 
 http://docs.mongodb.org/manual/core/object-id/
 
+#mongodump et mongoimport 
 
+https://www.youtube.com/watch?v=ZWnHhKiApVU
 
 #Framework d'aggregation
 
