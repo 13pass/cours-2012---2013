@@ -100,3 +100,28 @@ http://docs.mongodb.org/manual/core/document/#dot-notation
 * Comprendre la structure d'un objectId  
 
 http://docs.mongodb.org/manual/core/object-id/
+
+
+
+#Framework d'aggregation
+
+Equivalent du GROUP BY en SQL.
+
+Cas particulier de Map Reduce
+
+https://www.youtube.com/watch?v=OOciY22Eqpc
+https://www.youtube.com/watch?v=5ApeWrsjOJY
+
+## Pipeline et Expressions
+
+http://docs.mongodb.org/manual/reference/sql-aggregation-comparison/#sql-to-aggregation-framework-mapping-chart
+
+$match
+$project
+$group
+$sort
+$limit
+$unwind
+
+#divers operateurs 
+http://docs.mongodb.org/manual/reference/aggregation/
