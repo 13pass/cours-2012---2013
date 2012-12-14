@@ -88,7 +88,7 @@ Typiquement on peut faire des opérations atomiques avec mongoDB si ces opérati
 
 travailler les fonctions et opérateurs de requêtes:
 
-* http://docs.mongodb.org/manual/reference/operators/  
+* http://docs.mongodb.org/manual/reference/operators/  on ne s'intéresse pas aux opérateurs geospatiaux pour l'instant
 
 * faire une requete sur le 1 élement d'un tableau  
 
