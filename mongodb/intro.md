@@ -82,3 +82,14 @@ http://docs.mongodb.org/manual/tutorial/isolate-sequence-of-operations/
 
 Typiquement on peut faire des opérations atomiques avec mongoDB si ces opérations concernent un seul et même document. En d'autres termes pour faire des opérations atomiques sur des données il faut que ces données se trouvent dans le même document.
 
+
+##Partie pratique
+
+
+travailler les fonctions et opérateurs de requêtes:
+
+* http://docs.mongodb.org/manual/reference/operators/  
+
+* faire une requete sur le 1 élement d'un tableau  
+
+* mettre a jour l'élement du tableau qu'on a requeté en utilisant l'opérateur de position $  
