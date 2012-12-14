@@ -90,6 +90,6 @@ travailler les fonctions et opérateurs de requêtes:
 
 * http://docs.mongodb.org/manual/reference/operators/  on ne s'intéresse pas aux opérateurs geospatiaux pour l'instant
 
-* faire une requete sur le 1 élement d'un tableau  
+* Faire une requête sur le 1er élement d'un tableau  
 
-* mettre a jour l'élement du tableau qu'on a requeté en utilisant l'opérateur de position $  
+* Mettre a jour l'élement du tableau qu'on a requeté en utilisant l'opérateur de position '$'  
