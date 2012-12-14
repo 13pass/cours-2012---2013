@@ -92,4 +92,11 @@ travailler les fonctions et opérateurs de requêtes:
 
 * Faire une requête sur le 1er élement d'un tableau  
 
+http://docs.mongodb.org/manual/core/document/#dot-notation
+
+
 * Mettre a jour l'élement du tableau qu'on a requeté en utilisant l'opérateur de position '$'  
+
+* Comprendre la structure d'un objectId  
+
+http://docs.mongodb.org/manual/core/object-id/
