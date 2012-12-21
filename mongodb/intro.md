@@ -142,3 +142,6 @@ http://docs.mongodb.org/manual/reference/aggregation/
 
 * Récuperer le nombre d'évenement par jour de la semaine du début de l'évenement sur les 2 derniers mois.  
 
+Pour convertir les données en ISODATE à partir de chaine ISO, utiliser la fonction ISODate()  
+
+db.event.update({_id:ObjectId("4f59d2a85cd1772f24000246")},{$set:{start_time:ISODate("2012-03-03T13:00:00")}})
