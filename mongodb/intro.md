@@ -118,12 +118,27 @@ https://www.youtube.com/watch?v=5ApeWrsjOJY
 
 http://docs.mongodb.org/manual/reference/sql-aggregation-comparison/#sql-to-aggregation-framework-mapping-chart
 
-$match
-$project
-$group
-$sort
-$limit
-$unwind
+$match  
+
+$project  
+
+$group  
+
+$sort  
+
+$limit  
+
+$unwind  
+
 
 #divers operateurs 
 http://docs.mongodb.org/manual/reference/aggregation/
+
+##Exercices sur les aggregats:
+
+* Récuperer les 30 évenements regroupant le plus de participants feminins.  
+
+* Récuperer les ids des participants masculins avec la liste des evenements auxquels ils sont inscrits.  
+
+* Récuperer le nombre d'évenement par jour de la semaine du début de l'évenement sur les 2 derniers mois.  
+
