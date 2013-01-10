@@ -148,3 +148,25 @@ http://docs.mongodb.org/manual/reference/aggregation/
 Pour convertir les données en ISODATE à partir de chaine ISO, utiliser la fonction ISODate()  
 
 db.event.update({_id:ObjectId("4f59d2a85cd1772f24000246")},{$set:{start_time:ISODate("2012-03-03T13:00:00")}})
+
+
+#Replica set
+
+La réplication des bases de données permet la redondance et la sauvegarde des données d'une base.
+
+Au niveau de mongoDB elle s'organise par la mise en place d'un cluster d'instances de serveur de base de données (mongod). Les données de ses instances sont repliquées entre l'une et l'autre des instances et ce groupe est appelé "Replica sets".
+
+Une organisation est nécessaire à la bonne réplication des données au sein d'un replica set, pour cela chaque replica set possède une et une seule instance de mongod désignée comme primaire, les autres instances étant alors secondaire.
+
+Dans cette configuration seule l'instance primaire peut recevoir les requêtes d'écriture (insert et update) à la base et c'est elle qui réplique ensuite ces données sur les autres instances du replica set.
+
+
+##Exercices sur les 'replica set':
+
+* Créez un replica set par groupe, avec une instance de mongod pour chaque machine du groupe. 
+
+* Si vous avez que 2 machines à configurer alors vous configurez un arbitre sur une des 2 machines. 
+
+http://docs.mongodb.org/manual/replication/
+http://docs.mongodb.org/manual/applications/replication/
+http://www.kchodorow.com/blog/2012/06/26/replica-set-internals-part-v-initial-syn
