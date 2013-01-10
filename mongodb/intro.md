@@ -168,5 +168,33 @@ Dans cette configuration seule l'instance primaire peut recevoir les requêtes d
 * Si vous avez que 2 machines à configurer alors vous configurez un arbitre sur une des 2 machines. 
 
 http://docs.mongodb.org/manual/replication/
-http://docs.mongodb.org/manual/applications/replication/
 http://www.kchodorow.com/blog/2012/06/26/replica-set-internals-part-v-initial-syn
+
+##Read preference
+
+Depuis la version 2.2 est apparu la notion de read preference. Cela permet pour une application qui envoi des requêtes en lecture de définir des règles de lecture qui auront un impact sur la charge des replica:
+
+Il existe 5 modes de lecture depuis une application:
+
+* primary
+
+Toutes les opérations de lecture n'utilisent que l'instance primaire du replica set. C'est le comportement par défaut. Si le primaire n'est pas disponible, les opérations de lecture produiront une exception.
+
+* primaryPreferred
+
+Dans la plupart des situations, les opérations de lecture s'effectuent depuis l'instance primaire du replica. Cependant, si l'instance primaire n'est pas disponible, les opérations de lecture s'effectuent depuis les instances secondaires.
+
+* secondary
+
+Les opérations de lecture ne s'effectuent que sur les instances secondaires du replica. Si aucune instance secondaire n'est disponible, les opérations de lecture produiront une exception.
+
+* secondaryPreferred
+
+Dans la plupart des situations, les opérations de lecture s'effectuent sur les instances secondaires, mais dans le cas où le replica set contient un seul primaire avec aucune autre instance, l'opération de lecture utilisera l'instance primaire.
+
+* nearest
+
+On ne prend pas en considération le type du membre, l'idée étant de lire sur l'instance qui répond le plus rapidement (souvent la plus proche géographiquement) aux requêtes du client qu'elle soit primaire ou secondaire.
+
+
+http://docs.mongodb.org/manual/applications/replication/
