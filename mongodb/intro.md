@@ -53,9 +53,12 @@ Dans le cas de NoSQL on peut en déduire un choix de contraintes résultantes du
 
 
 #Comparaison relationelle et documentaire
-Table <=> Collection
-Enregistrement <=> Document
-Relation <=> Lien vers document
+Table <=> Collection  
+
+Enregistrement <=> Document  
+
+Relation <=> Lien vers document  
+
 
 http://docs.mongodb.org/manual/reference/sql-comparison/
 
