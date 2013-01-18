@@ -264,3 +264,17 @@ http://docs.mongodb.org/manual/faq/sharding/#faq-change-shard-key
 http://docs.mongodb.org/manual/core/sharding/
 http://docs.mongodb.org/manual/tutorial/deploy-shard-cluster/
 http://docs.mongodb.org/manual/administration/sharding/#set-up-a-sharded-cluster
+
+## data sample
+
+  git clone https://github.com/zeMirco/sf-city-lots-json  
+  
+  cd sf-city-lots-json/  
+  
+  sed '/^,/d' ./citylots.json > withoutcoma.json  
+  
+  tail -n +4 withoutcoma.json > withoutheader.json  
+  
+  sed '/^}/d' ./withoutheader.json > withoutfooter.json  
+  
+  mongoimport --host localhost --db sf_data --collection citylot --type json --file withoutfooter.jso
