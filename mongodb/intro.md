@@ -198,3 +198,69 @@ On ne prend pas en considération le type du membre, l'idée étant de lire sur 
 
 
 http://docs.mongodb.org/manual/applications/replication/
+
+
+
+
+# limite de la replication
+
+La replication des données avec mongoDb permet de distribuer les requêtes en lecture entre plusieurs instances de mongod qui peuvent être multipliés au besoin. Elle est cependant impossible en l'état pour distribuer les requêtes en ecriture qui sont toutes envoyé sur la même instance primary.
+
+Pour distribuer les requêtes en ecritures entre plusieurs instances il faut alors décider de creer un sharding pour les collections les plus exposées.
+
+# Sharding
+
+## choix d'une clef de sharding
+
+Pour sharder une collection il faut décider des critéres qui vont permettre de rediriger une requête sur tel ou tel shard. On utilise pour cela une clef de sharding qui créer un index sur un ou plusieurs champs de la collection.
+
+Le choix d'une clef de sharding d'une collection de documents est crucial pour un tas de raisons listées ci-dessous, d'autant plus que cette opération est difficilement reversible:
+http://docs.mongodb.org/manual/faq/sharding/#faq-change-shard-key
+
+ce choix dépend du schema implicite de données de la collection à sharder et des requêtes utilisés aussi bien en lecture ou écriture sur la base de données.
+
+
+Une clef appropriée doit pouvoir satisfaire de près ou de loin les critères suivant:
+
+* être facilement divisible afin que mongodb puisse distribuer le contenu d'une collection shardée au travers de différents shard qui la compose. Si les valeurs des champs correspondant à la clef de shard sont toutes identiques au niveau d'un ensemble de document, ces derniers se retrouveront tous dans un même shard qui risque de grossir sans jamais pouvoir être divisé en plusieurs shard. (voir section cardinalité ci dessous) 
+
+* evite la concentration des requêtes d'ecriture sur un nombre limité de shard. Une clef de sharding dont les champs sont liés au moment de l'insertion (heure ou date) sont par exemple à eviter car cela risque de rediriger toutes les requêtes d'ecriture sur le même shard. 
+
+* permet aux instances de mongo de retourner le resultats de la plupart des requêtes en interrogeant un seul shard. Pour cela il vaut mieux utiliser une clef comportant les champs courramment utilisés par les requêtes les plus populaires.  
+http://docs.mongodb.org/manual/core/sharding-internals/#query-isolation
+
+##cardinalité:
+
+La cardinalité est importante au niveau du choix d'une clef de sharding car mongoDb regroupe les documents en fonction des clef de sharding.
+
+* cardinalité faible
+Moins d'une centaine de valeur différentes
+exemple: statut, iso_language_code
+
+Imaginons le sharding d'une collection de documents dont la clef de shard serait 'statut' avec les valeurs possibles suivantes: "active","expired","removed","pending" 
+
+Avec 4 valeurs possibles différentes pour cette clef de sharding mongoDB ne pourra pas créer plus de 4 shard pour cette collection, ce qui limite fortement le partitionement de cette collection.
+
+* cardinalité moyenne
+nombre de valeur différentes important mais certaines valeurs regroupe un nombre important de documents
+exemple: code postal 
+
+Il y a environ 2 millions de personnes vivant à Paris répartit sur 20 code postaux différents ce qui signifie que chaque code postal peut regrouper en moyenne 100 000 personnes ce qui peut conduire à des shard de taille conséquentes.
+
+* cardinalité forte
+
+exemple: numéro de téléphone, la plupart des documents auront un numéro de téléphone unique.
+
+
+Pour augmenter la cardinalité d'une clef on peut aussi la composer de plusieurs champs.
+
+
+##remarques
+
+http://docs.mongodb.org/manual/faq/sharding/#faq-change-shard-key 
+
+##deploiement d'un cluster de shard
+
+http://docs.mongodb.org/manual/core/sharding/
+http://docs.mongodb.org/manual/tutorial/deploy-shard-cluster/
+http://docs.mongodb.org/manual/administration/sharding/#set-up-a-sharded-cluster
