@@ -14,9 +14,12 @@ La première partie devra permettre les fonctionnalitès suivantes:
 3. Lister les collections d'une base de données.  
 
 4. deduire un schema global d'une collection de document avec pour chaque champs trouvé:  
-* le nombre de document dans lequel ce champ est présent entre parenthèse (). Un clic sur ce nombre entre parenthèse générera une requête editable permettant de visualiser l'ensemble des documents contenant ce champ. Une fois editée par l'utilisateur la requête pourra être lancé à nouveau, les résultats seront affiché en dessous.  
-* le nombre de document pour lequel ce champ contient une liste de valeur ou de document entre crochets []. Un clic sur ce nombre entre crochets générera une requête editable permettant de visualiser l'ensemble des documents pour lesquels ce champ représente une liste de valeur ou de documents. Une fois editée par l'utilisateur la requête pourra être lancé à nouveau, les résultats seront affiché en dessous.  
-* le nombre de document pour lequel ce champ contient un document embarqué entre balises <>. Un clic sur ce nombre entre balises génèrera le schéma deductible de ce documents embarqué juste en dessous du schema du niveau supèrieur. On devra pouvoir descendre jusqu'à 2 niveaux de documents embarqués.  
+
+  * le nombre de document dans lequel ce champ est présent entre parenthèse (). Un clic sur ce nombre entre parenthèse générera une requête editable permettant de visualiser l'ensemble des documents contenant ce champ. Une fois editée par l'utilisateur la requête pourra être lancé à nouveau, les résultats seront affiché en dessous.  
+  
+  * le nombre de document pour lequel ce champ contient une liste de valeur ou de document entre crochets. Un clic sur ce nombre entre crochets générera une requête editable permettant de visualiser l'ensemble des documents pour lesquels ce champ représente une liste de valeur ou de documents. Une fois editée par l'utilisateur la requête pourra être lancé à nouveau, les résultats seront affiché en dessous.  
+  
+  * le nombre de document pour lequel ce champ contient un document embarqué entre balises <>. Un clic sur ce nombre entre balises génèrera le schéma deductible de ce documents embarqué juste en dessous du schema du niveau supèrieur. On devra pouvoir descendre jusqu'à 2 niveaux de documents embarqués.  
 
 La seconde partie devra permettre les fonctionnalitès suivantes:  
 
