@@ -21,7 +21,9 @@ La première partie devra permettre les fonctionnalitès suivantes:
   
   * le nombre de document pour lequel ce champ contient un document embarqué entre balises <>. Un clic sur ce nombre entre balises génèrera le schéma deductible de ce documents embarqué juste en dessous du schema du niveau supèrieur. On devra pouvoir descendre jusqu'à 2 niveaux de documents embarqués.  
   
-  Un jeu de données et à votre disposition sous la forme du fichier sample_events.json sur github, il suffit de l'importer avec la commande mongoimport pour l'importer dans une collection mongodb.
+  Un jeu de données est à votre disposition sous la forme du fichier sample_events.json sur github, il suffit de l'importer avec la commande mongoimport pour l'importer dans une collection mongodb.
+  
+  Un mockup est disponible sous la forme du fichier tp_page_collection.odg.
 
 La seconde partie devra permettre les fonctionnalitès suivantes:  
 
