@@ -26,7 +26,7 @@ Possibilité d'ajouter de nouveaux serveurs à une grappe de serveur utilisés p
 * scalabilité d'une base de données  
 
 
-La base de données étant souvent le composant le plus critique au niveau d'une application web, c'est souvent elle qui bénéficie en premier des procédure d'augmentation de montée en charge. L'upgrade du matèriel d'un serveur de base de données peut rapidement atteindre ses limites, de plus le fait de n'utiliser qu'un seul serveur aussi puissant soit t'il n'empèche pas ce serveur de subir des arrêts du à des pannes ou de la maintenance.
+La base de données étant souvent le composant le plus critique au niveau d'une application web, c'est souvent elle qui bénéficie en premier des procédures d'augmentation de montée en charge. L'upgrade du matèriel d'un serveur de base de données peut rapidement atteindre ses limites, de plus le fait de n'utiliser qu'un seul serveur aussi puissant soit t'il n'empèche pas ce serveur de subir des arrêts du à des pannes ou de la maintenance.
 
 Pour éviter des arrêts intempestifs de la base de données, qui seraient répercutés sur l'application, et assurer une continuité de service on utilisera alors un cluster de serveurs avec replication des données entre ces différents serveurs. Cela permet dans le même temps d'outrepasser les limites de scalabilité en terme d'upgrade des serveurs en augmentant le nombre de serveur du cluster au fur et à mesures des besoins en ressources matérielles. 
 
