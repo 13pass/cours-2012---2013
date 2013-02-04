@@ -1,6 +1,8 @@
 TP à réaliser en Perl en utilisant le framework Mojolicious (Lite ou Full). Le code source de l'application sera hébergé sur github.  
 
-Le TP est à faire en groupe comme indiqué en cours.  
+Le TP est à faire en groupe comme indiqué en cours et à rendre pour le 15 février 2013.
+
+Pas de compte-rendu nécessaire mais une adresse de dépot github référent à envoyer par email avec la composition du groupe et les parties traitées à vincent.hetru@13pass.com
 
 
 Le TP est composée de 3 partie, la première étant à faire par tous les groupes, une seule des 2 autres parties (2ème et 3ème) est à faire au choix du groupe avant la première du Vendredi 25 Janvier pour la présentation d'une première maquette de l'application (pas forcèment fonctionnelle).  
