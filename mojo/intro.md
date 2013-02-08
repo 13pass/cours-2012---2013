@@ -66,6 +66,7 @@ morbo hello.pl
 ##Modern Perl
 http://modernperlbooks.com/books/modern_perl/
 
+```perl
 #!/usr/bin/env perl
 
 use 5.010;
@@ -73,6 +74,7 @@ use 5.010;
 #directives de compilateur:
 use strict;   #oblige la déclaration des variables. Interdit l'utilisation de mots non-déclarés, etc...
 use warnings; #avertit des problèmes de syntaxe
+```
 
 ##tuto en ligne Perl:
 http://perltuts.com/tutorials/quick-start  
