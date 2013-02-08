@@ -53,3 +53,28 @@ get '/' => {text => 'Hello World!'};
 app->start;
 
 morbo hello.pl
+
+#Perl
+
+##Perl 5 et Perl 6
+
+##CPAN
+
+*Docs au format Perldoc
+*Test unitaire pour chaque fonctionnalité
+
+##Modern Perl
+http://modernperlbooks.com/books/modern_perl/
+
+#!/usr/bin/env perl
+
+use 5.010;
+
+#directives de compilateur:
+use strict;   #oblige la déclaration des variables. Interdit l'utilisation de mots non-déclarés, etc...
+use warnings; #avertit des problèmes de syntaxe
+
+##tuto en ligne Perl:
+http://perltuts.com/tutorials/quick-start  
+
+http://formation-perl.fr/guide-perl.html
