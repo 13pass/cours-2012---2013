@@ -27,7 +27,7 @@ Permet de gérer en natif les protocoles WebSocket, Comet (long polling) ainsi q
 
 Plus de détails:
 http://mojolicio.us/perldoc/Mojo/Server/Prefork
-http://diegok.github.com/mojolicious-talk/file/intro/blocks.png
+![architecture Mojo](http://diegok.github.com/mojolicious-talk/file/intro/blocks.png)
 
 
 ##Présentation en vidéo
