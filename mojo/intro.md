@@ -80,3 +80,20 @@ use warnings; #avertit des problèmes de syntaxe
 http://perltuts.com/tutorials/quick-start  
 
 http://formation-perl.fr/guide-perl.html
+
+## projet de TP : 
+Comparateur de trajet temps réel (covoiturage, autolib, train, avion).
+
+Pour simplfier on ne prend qu'un seul moyen de transport pour un trajet
+
+## web crawling
+
+http://mojolicio.us/perldoc/Mojo/UserAgent
+
+### json parsing and json pointers
+
+http://mojolicio.us/perldoc/Mojo/JSON/Pointer
+
+### css selectors
+
+http://www.w3schools.com/cssref/css_selectors.as
