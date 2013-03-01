@@ -97,3 +97,25 @@ http://mojolicio.us/perldoc/Mojo/JSON/Pointer
 ### css selectors
 
 http://www.w3schools.com/cssref/css_selectors.as
+
+## aspects légaux du scraping de données
+
+La récolte des données pose généralement peu de problèmes mais la reproduction du contenu extrait doit être autorisée par les ayants droits sur ce contenu. 
+
+Alors comment savoir si on est autorisé à exploiter le contenu d'un site?
+
+Aujourd'hui il reste un flou entre la theorie et la pratique avec du côté theorique les lois concernant les droits d'auteurs et du côté pratique des milliers de moteurs de recherche, d'aggregateur et de comparateur qui reprennent le contenu de sites et le publient a nouveau souvent sous une forme différente qui peut donner une valeur ajoutée au contenu.
+
+Pour cela on peut toutefois se baser sur plusieurs éléments:
+
+* Les clauses de propriété intellectuelle: 
+Elles souvent présentes au niveau des conditions générales d'utilisations d'un site.
+
+* Les licences d'utilisation de contenu:
+Celles ci sont de plus en plus claires et simples à utiliser, notamment les licences de type créatives commons http://fr.wikipedia.org/wiki/Licence_Creative_Commons.
+Si un contenu est sous licence il suffit de se reporter à cette licence pour connaître quels sont les utilisations possible de ce contenu. 
+
+* Le fichier robots.txt
+Utilisé par les moteurs de recherche afin de permettre aux sites de définir quelles pages ils souhaitent autoriser ou exclure du traitement des robots de crawling.  http://en.wikipedia.org/wiki/Robots_exclusion_standard
+
+Finalement dans le doute le mieux reste encore de contacter les responsables du site en question afin de leur demander une autorisation écrite pour exploiter leur contenu en leur expliquant en quoi cela peut leur être bénéfique (redirection de trafic, mise en avant de site, etc...)
