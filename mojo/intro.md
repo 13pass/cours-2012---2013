@@ -119,3 +119,11 @@ Si un contenu est sous licence il suffit de se reporter à cette licence pour co
 Utilisé par les moteurs de recherche afin de permettre aux sites de définir quelles pages ils souhaitent autoriser ou exclure du traitement des robots de crawling.  http://en.wikipedia.org/wiki/Robots_exclusion_standard
 
 Finalement dans le doute le mieux reste encore de contacter les responsables du site en question afin de leur demander une autorisation écrite pour exploiter leur contenu en leur expliquant en quoi cela peut leur être bénéfique (redirection de trafic, mise en avant de site, etc...)
+
+
+## fil rouge du TP: une fois les données récupérées et traitées il faut renvoyer le résultat à l'utilisateur.
+
+L'idée ici étant de renvoyer à l'utilisateur les informations de trajet dès que le serveur a finit de les traiter. 
+Pour cela il faut donc que le serveur puisse envoyer des données au navigateur.
+
+Vous pouvez vous inspirer du site http://www.skyscanner.fr pour l'interface
