@@ -127,3 +127,79 @@ L'idée ici étant de renvoyer à l'utilisateur les informations de trajet dès 
 Pour cela il faut donc que le serveur puisse envoyer des données au navigateur.
 
 Vous pouvez vous inspirer du site http://www.skyscanner.fr pour l'interface
+
+Pour cela plusieurs stratégies sont possibles:
+
+* Créer une requête d'interrogation Ajax pour chaque service de transport requêté.
+Ok mais si on interroge 10 services, cela signifie que l'on envoi simultanément 10 requêtes HTTP classique ce qui peut s'avérer assez lourd.
+
+* Faire du long polling pour simuler une connection entre le serveur et le client.
+Il s'agit de toujours avoir une connection HTTP ouverte afin de permettre au serveur d'envoyer des données au navigateur.
+Cela peut être moins lourd que plusieurs requêtes en Ajax mais nécessite toujours plusieurs requêtes HTTP classiques. Et cela implique de deployer un service de type Comet côté serveur.
+
+* Utiliser une communication bidirectionnelle tel que les websocket ou les Sockets Flash.
+Ici la communication entre client et serveur est optimisée car il n'y a plus besoin de renvoyer les entêtes HTTP pour chaque message.
+Par contre seuls les navigateurs récents implémente les websockets, les Sockets Flash bénéficient d'un taux important de navigateur intégrant un plugin flash sauf sur certains types de mobiles et tablettes.
+
+## Websockets
+
+Les WebSockets utilisent le protocole HTTP pour que les requêtes envoyées soient considérées comme du HTTP classique.
+
+```
+//creates a WebSocket and connect to server
+var exampleSocket = new WebSocket("ws://www.example.com/socketserver");
+```
+
+```
+GET /socketserver HTTP/1.1\r\n
+host: example.com\r\n
+upgrade: websocket\r\n
+connection: upgrade\r\n
+sec-websocket-version: 13\r\n
+sec-websocket-key: E4WSEcseoWr4csPLS2QJHA==\r\n
+\r\n
+```
+
+le serveur doit répondre avec le code 101 standard indiquant que le serveur comprend la demande de mise à niveau et souhaite changer de protocole
+
+```
+HTTP/1.1 101 OK
+upgrade: websocket\r\n
+connection: upgrade\r\n
+sec-websocket-accept: 7eQChgCtQMnVILefJAO6dK5JwPc=\r\n
+\r\n
+```
+
+Pour envoyer des données depuis le navigateur:
+```
+exampleSocket.send("Here's some text that the server is urgently awaiting!");
+```
+
+Pour recevoir des données du serveur depuis le navigateur:
+```
+exampleSocket.onopen = function (event) {
+  exampleSocket.send("Here's some text that the server is urgently awaiting!"); 
+};
+```
+
+https://developer.mozilla.org/en-US/docs/WebSockets/Writing_WebSocket_client_applications
+http://msdn.microsoft.com/fr-fr/magazine/hh975342.aspx
+
+## Les websockets sont t'ils prêts?
+
+Oui et non.
+
+Seuls les derniers navigateurs implémente la dernière version sécurisée (v13) de cette technologie:
+http://caniuse.com/websockets
+Firefox 6+, Google Chrome 14+ ,Opera 12.10+, Safari 6+ et Internet Explorer 10+, etc...
+
+Les derniers serveurs savent les gérer: IIS 8.0+, NGINX 1.3+, Apache Tomcat 7, mod_websocket
+
+Une solution pour palier à cela est d'utiliser des solutions de fallback à la manière de [Sockjs](https://github.com/sockjs) ou [engine.io](https://github.com/LearnBoost/engine.io) 
+
+Cela permet d'utiliser les websockets lorsqu'ils sont implémentés au niveau du navigateur ou bien d'utiliser une autre methode tel que le long polling qui fonctionne sur tous les navigateurs. 
+
+### Les websockets avec mojolicious
+
+un exemple de chat mono-processus utilisant les websockets. 
+https://gist.github.com/jberger/4702783
