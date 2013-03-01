@@ -203,3 +203,10 @@ Cela permet d'utiliser les websockets lorsqu'ils sont implémentés au niveau du
 
 un exemple de chat mono-processus utilisant les websockets. 
 https://gist.github.com/jberger/4702783
+
+### Pub/Sub
+exemple [Socket.io](http://socket.io/) qui utilise engine.io pour la communication bidirectionnelle et Redis avec un pattern Pub/sub pour gérer le broadcasting de message:
+http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern
+https://github.com/marcusramberg/mojo-redis
+
+On peut aussi utiliser un pattern Pub/Sub pour créer un bus de messages pour faire communiquer les différents workers d'une application.
