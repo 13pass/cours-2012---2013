@@ -210,3 +210,23 @@ http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern
 https://github.com/marcusramberg/mojo-redis
 
 On peut aussi utiliser un pattern Pub/Sub pour créer un bus de messages pour faire communiquer les différents workers d'une application.
+
+
+## fil rouge du TP: après avoir récupéré des données voyons comment les stocker. 
+
+Les informations importantes sont différentes pour les différents services que nous avons utilisé, covoiturage, avion, train, etc...
+Nous décidons donc de tester un stockage des données de type documentaire en utilisant MongoDB. 
+Cela nous permettra d'éviter de modéliser notre base en stockant directement les données reçus dans des collections de documents.
+
+## interface avec mongoDB
+
+* Pour démarrer avec mongoDB:
+https://github.com/13pass/cours-2012---2013/blob/master/mongodb/intro.md
+
+* Mango, un driver qui intègre Mojo::IOLoop pour requeter la base de données de façon syncrone ou asynchrone.
+https://github.com/kraih/mango
+Pas de documentation mais des exemples d'utilisations au niveau des différents tests unitaires:
+https://github.com/kraih/mango/tree/master/t
+
+* Le driver officiel synchrone
+http://search.cpan.org/dist/MongoDB/
