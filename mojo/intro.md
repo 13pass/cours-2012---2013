@@ -98,6 +98,10 @@ http://mojolicio.us/perldoc/Mojo/JSON/Pointer
 
 http://www.w3schools.com/cssref/css_selectors.as
 
+### gestion asynchrone et non bloquante des requêtes de crawling.
+http://mojolicio.us/perldoc/Mojo/IOLoop/Delay
+
+
 ## aspects légaux du scraping de données
 
 La récolte des données pose généralement peu de problèmes mais la reproduction du contenu extrait doit être autorisée par les ayants droits sur ce contenu. 
