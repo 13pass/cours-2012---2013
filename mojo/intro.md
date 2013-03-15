@@ -96,7 +96,7 @@ http://mojolicio.us/perldoc/Mojo/JSON/Pointer
 
 ### css selectors
 
-http://www.w3schools.com/cssref/css_selectors.as
+http://www.w3schools.com/cssref/css_selectors.asp
 
 ### gestion asynchrone et non bloquante des requêtes de crawling.
 http://mojolicio.us/perldoc/Mojo/IOLoop/Delay
