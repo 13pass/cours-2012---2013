@@ -1,57 +1,57 @@
-introduction a git 1
+##introduction a git 1
 http://www.youtube.com/watch?v=ULRN0vS4Wtk
 
-introduction a git2
+##introduction a git2
 http://www.youtube.com/watch?v=IEmgXsoV35w
 
-Atelier pratique
+##Atelier pratique
 http://www.youtube.com/watch?v=qPo7YPB6EFM
 
-Tutoriel intératif:
+##Tutoriel intératif:
 http://try.github.com
 
-Git: un outil de gestion de contenu de type DVCS.
+##Git: un outil de gestion de contenu de type DVCS.
 
 http://fr.wikipedia.org/wiki/Gestion_de_version_d%C3%A9centralis%C3%A9e#Gestion_de_versions_d.C3.A9centralis.C3.A9e
 
-Installation de git:
+##Installation de git:
 
 http://progit.org/book/fr/  
 
 git clone git://git.kernel.org/pub/scm/git/git.gitch1-4.html
 
-Configuration de git:
+##Configuration de git:
 
 http://progit.org/book/fr/ch1-5.html#votre_identit
 
-Création d'un dépot:
+##Création d'un dépot:
 
 http://progit.org/book/fr/ch2-1.html#initialisation_dun_dpt_git_dans_un_rpertoire_existant
 
-Creation d'un depot pour notre application twitter.
+##Creation d'un depot pour notre application twitter.
 
 à la racine de notre projet on lance la commande 
 
 git init
 
-En résumé
+##En résumé
 
-Créer un nouveau dépot dans un répertoire
+###Créer un nouveau dépot dans un répertoire
 git init
 
-Editer le fichier .gitignore pour ajouter les fichiers que vous ne souhaitez pas/plus commiter dans votre depot
+###Editer le fichier .gitignore pour ajouter les fichiers que vous ne souhaitez pas/plus commiter dans votre depot
 
-"Tracker" les nouveaux fichiers (prendre en compte les nouveaux fichiers pour les futurs commits)
+###"Tracker" les nouveaux fichiers (prendre en compte les nouveaux fichiers pour les futurs commits)
 	
 git add .
 
-Commiter tous les fichiers auxquels des modifications ont été apportés (tous les fichiers modifier passe en status "stage" grace au -a)
+###Commiter tous les fichiers auxquels des modifications ont été apportés (tous les fichiers modifier passe en status "stage" grace au -a)
 	
 git commit -am "Message de commit"
 
 
 
-Bug tracking
+##Bug tracking
 
 
 git log invoqué sans argument énumère en ordre chronologique inversé les commits réalisés. Cela signifie que les commits les plus récents apparaissent en premier. Cette commande indique chaque commit avec sa somme de contrôle SHA-1, le nom et l'e-mail de l'auteur, la date et le message du commit.
@@ -69,20 +69,20 @@ git log --pretty="%h — %s" --author=michel --since="2008-10-01" --before="2008
 
 
 
-Les branches
+##Les branches
 
 Il est très souvent utile de créer des branches pour se séparer de la branche principale "master" et éviter de perturber le travail des autres développeurs.
 
 
-Lister les branches et voir la branche en cours
+###Lister les branches et voir la branche en cours
 	
 git branch
 
-Créer une nouvelle branche en se basant sur la révision actuellement utilisée (HEAD par défaut)
+###Créer une nouvelle branche en se basant sur la révision actuellement utilisée (HEAD par défaut)
 	
 git checkout -b <nom de la nouvelle branche>
 
-Il est souvent utile de "merger" les modifications d’une branche dans master
+###Il est souvent utile de "merger" les modifications d’une branche dans master
 	
 git checkout master
 git merge <branche à fusionner dans master>	
@@ -92,9 +92,9 @@ git branch -d <branche à supprimer> # si la branche n’est plus utile, il est 
 
 
 
-Les remotes
+##Les remotes
 
-Ajouter un "remote", c’est à dire un serveur distant ou envoyer le dépot local
+###Ajouter un "remote", c’est à dire un serveur distant ou envoyer le dépot local
 	
 git remote add <nom du remote> <url du remote> 
 
@@ -116,14 +116,15 @@ Si l'on "pull" et "push" regulierement sur le master d'origin (ce qui est souven
   merge = refs/heads/master
 
 
-Les commandes pull et push peuvent ensuite être utilisées de façon minimale:
+
+###Les commandes pull et push peuvent ensuite être utilisées de façon minimale:
 	
 git pull
 git push
 
 
 
-Envoyer une branche, un tag:
+###Envoyer une branche, un tag:
 	
 git push origin <nom de la ressource>
 
@@ -136,7 +137,7 @@ S’il n’y aucun problème, un commit sera créé avec les modifications dista
 Il suffit ensuite de pusher, pour envoyer tout ça sur le "remote".
 
 
-Pour ceux qui veulent utiliser Git avec Windows et TortoiseGit, vous pouvez suivre le tuto suivant :
+##Pour ceux qui veulent utiliser Git avec Windows et TortoiseGit, vous pouvez suivre le tuto suivant :
 
 http://uncod.in/blog/github-tortoisegit-and-organizational-workflow-tutorial/
 
