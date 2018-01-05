@@ -1,8 +1,8 @@
-#NodeJS
+# NodeJS
 
-##Ressources utiles pour démarrer:
+## Ressources utiles pour démarrer:
 
-###Tutoriels :
+### Tutoriels :
 
 * [Site officiel - NodeJS.org](http://nodejs.org/)<br/>
 * [Node Manual](http://nodemanual.org/latest/)
@@ -14,7 +14,7 @@
 * [Async](https://github.com/caolan/async)
 * [Node.js Async Programming](http://www.hacksparrow.com/node-js-async-programming.html)
 
-###Screencasts :
+### Screencasts :
 
 * [Introduction to Node.js with Ryan Dahl](http://www.youtube.com/watch?v=jo_B4LTHi3I)
 * [Google Tech Talk - Node.js: JavaScript on the Server](http://www.youtube.com/watch?v=F6k8lTrAE2g)
@@ -23,14 +23,14 @@
 * [NodeTuts](http://nodetuts.com/)
 
 
-###Divers :
+### Divers :
 
 * [Bonnes pratiques sur les dépendances](http://blog.nodejitsu.com/package-dependencies-done-right)
 * [Useful Node.js Tools, Tutorials And Resources](http://coding.smashingmagazine.com/2011/09/16/useful-node-js-tools-tutorials-and-resources/)
 * [faciliter le debug de nodejs avec inspect](http://docs.nodejitsu.com/articles/getting-started/how-to-use-util-inspect)
 * ["Callbacks are the modern goto"](http://elm-lang.org/learn/Escape-from-Callback-Hell.elm)
 
-##Javascript:
+## Javascript:
 
 * [Google Tech Talk - Javascript : The good parts](http://www.youtube.com/watch?v=hQVTIJBZook)
 * [Crockford on Javascript](http://yuiblog.com/crockford/)
@@ -38,11 +38,11 @@
 * [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/JavaScript)
 
 
-###JSON:
+### JSON:
 
 http://fr.wikipedia.org/wiki/JavaScript_Object_Notation
 
-##Exercices :
+## Exercices :
 
 ### Exercice A :
 En utilisant node.js, écrire une application web de chat à l'aide Socket.io
@@ -79,7 +79,7 @@ voir http://www.w3schools.com/jsref/jsref_obj_date.asp
 
 
 
-##Latence
+## Latence
 
 (cf http://fr.wikipedia.org/wiki/Latence)
 
@@ -131,7 +131,7 @@ Lors d'une opération d'entrée/sortie le flot d'exécution est immédiatement l
 Ces 3 derniers modes d'opérations sont dit basé sur des événements (event-based)
 
 
-##event-loop  
+## event-loop  
 
 node.js utilisé une boucle d'évenement (event-loop).
 
@@ -154,7 +154,7 @@ while there are still events to process:
 http://nikhilm.github.com/uvbook/basics.html
 
 
-##Exercices :
+## Exercices :
 
 ### Exercice D : 
 
@@ -175,7 +175,7 @@ suite de l'exercice C (en node.js)
 2) idem 2) de l'exercice D.  
 
 
-##Synchronisation et coordination:  
+## Synchronisation et coordination:  
 
 
 La synchronisation controle l'accès aux ressources partagèes entre plusieurs activités. Pour eviter par exemple l'accès simultanée à une même ressource par 2 activités.
@@ -190,7 +190,7 @@ L'une comme l'autre peuvent être implicites ou explicites.
 https://github.com/caolan/async
 
 
-##Exercice F:
+## Exercice F:
 
 En vous inspirant du poste suivant:
 
@@ -217,7 +217,7 @@ Il n'y a qu'une saliere de disponible pour l'ensemble des cuisiniers.
 
 Calculer le temps total pour la cuisson des pates
 
-##Exercice E:  
+## Exercice E:  
 
 Creer un bouton facebook connect. (voir graph.facebook.com et https://developers.facebook.com/tools/explorer/ et http://developers.facebook.com/docs/concepts/login/permissions-login-dialog/)
 
